@@ -1,113 +1,169 @@
-import Image from 'next/image'
+import Image from "next/image";
+import "./newcss.css";
+import Leaf from "./assets/leaf.png";
+import Image11 from "./assets/imgae11.png";
+import Image12 from "./assets/image12.png";
+import Image13 from "./assets/iamge13.png";
+import Image14 from "./assets/image14.png";
+import Image15 from "./assets/image15.png";
+import Image16 from "./assets/image16.png";
+import Image17 from "./assets/image17.png";
+import Image18 from "./assets/image18.png";
+import Lock from './assets/lock.svg';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <section>
+        <div className="container-fluid">
+          {/* ------section 1----------- */}
+
+          <div
+            id="main-bg"
+            className=" h-screen w-screen bg-no-repeat bg-cover"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <div className="text-center">
+              <p className="text-gray-500 text-sm p-2">
+                Free shipping within USA
+              </p>
+            </div>
+            <hr className="bg-gray-500 border-1 " />
+            <div className="mx-16 flex flex-row my-8 justify-between">
+              <div className="text-gray-500 text-sm " id="gg">
+                <ul className="flex flex-row space-x-12 ">
+                  <li>Nacklaces</li>
+                  <li>Bracelets</li>
+                  <li>Rings</li>
+                  <li>Earrings</li>
+                </ul>
+              </div>
+              <div className="flex flex-row space-x-2 items-center">
+                <Image src={Leaf} className="w-6" />
+                <p className="text-amber-800 text-2xl">Tropical Exotics</p>
+              </div>
+              <div className="text-gray-500 text-sm">
+                <ul className="flex flex-row space-x-12">
+                  <li>USA</li>
+                  <li>Sign in/Register</li>
+                  <li>Cart(0)</li>
+                  <li>Search</li>
+                </ul>
+              </div>
+            </div>
+            <div className="text-lg mx-16">Subtle & Wearable Solid Gold</div>
+            <div className="text-6xl mx-16">
+              Understated Luxury for your <br /> Distinct Nature
+            </div>
+            <div className="text-base mx-16 underline underline-offset-8">
+              SHOP OUR BEST SELLER
+            </div>
+          </div>
+          {/* -----------section 2--------- */}
+
+          <div className="flex mx-16 my-14">
+            <div>
+              <Image src={Image11} />
+            </div>
+            <Image src={Image12} className="absolute w-36 mt-44 " id="nack" />
+            <div className="" id="sec-2-r">
+              <div className="mt-28 ml-36">
+                <p className="text-6xl">Make a Statement</p>
+                <p className="text-lg my-3">
+                  Great accessory for a beach outfit
+                </p>
+                <button className="mt-4 text-white bg-[#B77100] p-2 text-sm">
+                  SHOP NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* -------------section 3----------- */}
+          <div className="flex  bg-[#F0E9D2] justify-between mx-16">
+            <div className="ml-24 mt-16">
+              <button className="bg-[#343434] text-white px-6 py-2 ">
+                THIS WEEK’S OFFER
+              </button>
+              <p className="text-4xl my-6 leading-relaxed">
+                Add a touch of sophistication to your
+                <br /> beach outfit.
+              </p>
+              <button className="text-base underline underline-offset-8">
+                BUY NOW
+              </button>
+            </div>
+            <div className="w-96">
+              <Image src={Image14} />
+            </div>
+          </div>
+          {/* --------section 4---------- */}
+
+          <div className="mx-16 my-14 ">
+            <p className="font-normal text-2xl ">POPULAR PRODUCTS</p>
+            <div className="flex space-x-6">
+
+            <div>
+                <Image className="w-72" src={Image15} />
+                <div className="flex justify-between">
+                  <div>
+                    <p>Silver Chain Pendant</p>
+                    <p>$40</p>
+                  </div>
+                  <div className="bg-[#FFD58F59]">
+                  <Image src={Lock} className="mr-3 pt-3"/>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Image className="w-72" src={Image16} />
+                <div className="flex justify-between">
+                  <div>
+                    <p>Silver Chain Pendant</p>
+                    <p>$40</p>
+                  </div>
+                  <div className="bg-[#FFD58F59]">
+                  <Image src={Lock} className="mr-3 pt-3"/>
+                  </div>
+                </div>
+              </div>
+                <div>
+                <Image className="w-72" src={Image17} />
+                <div className="flex justify-between">
+                  <div>
+                    <p>Silver Chain Pendant</p>
+                    <p>$40</p>
+                  </div>
+                  <div className="bg-[#FFD58F59]">
+                  <Image src={Lock} className="mr-3 pt-3"/>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Image className="w-72" src={Image18} />
+                <div className="flex justify-between">
+                  <div>
+                    <p>Silver Chain Pendant</p>
+                    <p>$40</p>
+                  </div>
+                  <div className="bg-[#FFD58F59]">
+                  <Image src={Lock} className="mr-3 pt-3"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ------------section 5----------- */}
+           <div className="border border-black mx-16">
+           <div className="flex my-20 mx-20 justify-between">
+           <div className="text-3xl">ABOUT US</div>
+           <div className="text-sm w-80  text-[#797979]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</div>
+           <div className="text-sm w-72 text-[#797979]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</div>
+           </div>
+
+
+           </div>
+
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </section>
+    </>
+  );
 }

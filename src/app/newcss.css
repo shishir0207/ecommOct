@@ -1,0 +1,21 @@
+#main-bg{
+    /* background-image: ; */
+    /* overflow: hidden; */
+    background: linear-gradient(180deg, #E5DCBC -23.15%, rgba(229, 220, 188, 0.30) 100%),url("../app/assets/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+#nack{
+    margin-left: 22%;
+}
+#sec-2-r{
+    background-image: url('./assets/iamge13.png');
+    background-color: #E5DCBC;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#sec-3-l{
+    
+}
