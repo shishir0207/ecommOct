@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+font-family: 'Caveat';
+src: url('./assets/Caveat/static/Caveat-Regular.ttf');
+
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/Roboto/Roboto-Regular.ttf');
+    /* src: url('./assets/Roboto/Roboto-Bold.ttf'); */
+    /* font-weight: 700; */
+    
+    font-weight: 400;
+    font-style: normal;
+    }
+    @font-face {
+        font-family: 'Roboto';
+        /* src: url('./assets/Roboto/Roboto-Regular.ttf'); */
+        src: url('./assets/Roboto/Roboto-Bold.ttf');
+        font-weight: 700;
+        
+        /* font-weight: 400; */
+        font-style: normal;
+        }
+    

@@ -19,3 +19,37 @@
 #sec-3-l{
     
 }
+/* #img11{
+    background-image: url('./assets/imgae11.png');
+    background-size: cover;
+    width: 100%;
+    height:400px;
+} */
+#img22{
+    background-image: url('./assets/image19.png');
+    background-size: cover; 
+    height: 400px;
+}
+#img23{
+    background-image: url('./assets/iamge20.png');
+    background-size: cover; 
+    height: 400px;
+}
+#img24{
+    background-image: url('./assets/image21.png');
+    background-size: cover; 
+    height: 400px;
+}
+#img25{
+    background-image: url('./assets/image22.png');
+    background-size: cover; 
+    height: 400px;
+}
+
+#www{
+    font-family: 'Caveat';
+}
+#main{
+    font-family: 'Roboto';
+    
+}
