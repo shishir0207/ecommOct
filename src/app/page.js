@@ -412,6 +412,7 @@ export default function Home() {
           </div>
           {/* ----------section 11----- FOOTER---------*/}
 
+
           <footer className=" mx-24">
             <div className="">
               <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
