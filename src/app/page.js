@@ -410,7 +410,9 @@ export default function Home() {
             <Image src={Leaf} className="w-6" />
             <p className="text-amber-800 text-2xl">Tropical Exotics</p>
           </div>
+         {/* --fggg? */}
           {/* ----------section 11----- FOOTER---------*/}
+
 
 
           <footer className=" mx-24">
