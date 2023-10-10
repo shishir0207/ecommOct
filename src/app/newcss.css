@@ -4,10 +4,51 @@
     background: linear-gradient(180deg, #E5DCBC -23.15%, rgba(229, 220, 188, 0.30) 100%),url("../app/assets/Rectangle.png");
     background-repeat: no-repeat;
     background-size: cover;
-  
+    /* object-fit: cover; */
+    
 }
-#nack{
+/* #nack{
     margin-left: 22%;
+} */
+@media (min-width:500px){
+    #nack{
+        margin-left: 31%;
+    }
+}
+@media (min-width:640px){
+    #nack{
+        margin-left: 31%;
+    }
+}
+@media (min-width:768px){
+    #nack{
+        margin-left: 27%;
+    }
+}
+@media (min-width:950px){
+    #nack{
+        margin-left: 26%;
+    }
+}
+/* @media (min-width:950px) and (max-width:1024px){
+    #sec-3{
+        margin-top: 75px;
+    }
+} */
+@media (min-width:1024px){
+    #nack{
+        margin-left: 25%;
+    }
+} 
+@media (min-width:1280px){
+    #nack{
+        margin-left: 20%;
+    }
+} 
+@media (min-width:1536px){
+    #nack{
+        margin-left: 18%;
+    }
 }
 #sec-2-r{
     background-image: url('./assets/iamge13.png');
@@ -28,22 +69,26 @@
 #img22{
     background-image: url('./assets/image19.png');
     background-size: cover; 
-    height: 400px;
+    /* height: 400px; */
+
 }
 #img23{
     background-image: url('./assets/iamge20.png');
     background-size: cover; 
-    height: 400px;
+    /* height: 400px; */
+
 }
 #img24{
     background-image: url('./assets/image21.png');
     background-size: cover; 
-    height: 400px;
+    /* height: 400px; */
+
 }
 #img25{
     background-image: url('./assets/image22.png');
     background-size: cover; 
-    height: 400px;
+    /* height: 400px; */
+
 }
 
 #www{
@@ -53,3 +98,10 @@
     font-family: 'Roboto';
     
 }
+
+
+
+/* toggle */
+
+
+   
