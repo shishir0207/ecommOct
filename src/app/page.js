@@ -37,6 +37,7 @@ import Head from "next/head";
 import down from "./assets/downarow.svg";
 import { useState } from "react";
 import Link from "next/link";
+import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,25 +73,25 @@ export default function Home() {
                 }`}
               >
                 <div className="space-y-2">
-                <select className="bg-[#E5DCBC4D] list-none">
-                        <option>USA</option>
-                        <option>NewYork</option>
-                        <option>Colorado</option>
-                        <option>Detroit</option>
-                      </select>
-                  <hr/>
                   <select className="bg-[#E5DCBC4D] list-none">
-                        <option>Products</option>
-                        <option>Nacklaces</option>
-                        <option>Bracelets</option>
-                        <option>Rings</option>
-                        <option>Earings</option>
-                      </select>
-                      <hr/>
+                    <option>USA</option>
+                    <option>NewYork</option>
+                    <option>Colorado</option>
+                    <option>Detroit</option>
+                  </select>
+                  <hr />
+                  <select className="bg-[#E5DCBC4D] list-none">
+                    <option>Products</option>
+                    <option>Nacklaces</option>
+                    <option>Bracelets</option>
+                    <option>Rings</option>
+                    <option>Earings</option>
+                  </select>
+                  <hr />
                   <div>Sign in/Register</div>
-                  <hr/>
+                  <hr />
                   <div>Cart(0)</div>
-                  <hr/>
+                  <hr />
                   <div>Search</div>
                 </div>
                 {/* Sidebar content */}
@@ -107,25 +108,31 @@ export default function Home() {
             <div className="mx-16 lg:flex lg:flex-row hidden my-8 justify-between">
               <div className="text-gray-500 text-sm " id="gg">
                 <ul className="flex flex-row space-x-12 ">
-                  <li id="na">
-                    <a href="#" className="hover:underline">
-                      Nacklaces
-                    </a>
+                  <li className="mb-4">
+                    <Link href="./jwelery" className="hover:underline">
+                      Jwelery
+                    </Link>
                   </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Bracelets
-                    </a>
+
+                  <li className="mb-4">
+                    <Link href="./electronics" className="hover:underline">
+                      Electronics
+                    </Link>
                   </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Rings
-                    </a>
+                  <li className="mb-4">
+                    <Link href="./women" className="hover:underline">
+                      Women's
+                    </Link>
                   </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Earrings
-                    </a>
+                  <li className="mb-4">
+                    <Link href="./men" className="hover:underline">
+                      Men's
+                    </Link>
+                  </li>
+                  <li className="mb-4">
+                    <Link href="./new" className="hover:underline">
+                      ALL CATAGORY
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -153,9 +160,14 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline">
-                      Cart (0)
-                    </a>
+                    <div className="flex space-x-4 hover:underline">
+                      {/* <button className="hidden  md:inline-block border-gray-400 border  px-4 py-2 rounded hover:bg-orange-200">
+                        Your Cart
+                      </button> */}
+                      <Link href="/cart">Cart(0)
+                        {/* <ShoppingCartIcon class="h-6 w-6 text-gray-500" /> */}
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <a href="#" className="hover:underline">
@@ -593,7 +605,10 @@ export default function Home() {
                     <div className="flex items-start">
                       <Image src={post} />
                       <li className="mb-4 ml-2">
-                        <Link href="mailto:info@tropicalexo.com" className="hover:underline break-all">
+                        <Link
+                          href="mailto:info@tropicalexo.com"
+                          className="hover:underline break-all"
+                        >
                           info@tropicalexo.com
                         </Link>
                       </li>
@@ -601,7 +616,10 @@ export default function Home() {
                     <div className="flex items-start">
                       <Image src={tele} />
                       <li className="mb-4 ml-2">
-                        <Link href="tel:+01 123 456 7890" className="hover:underline">
+                        <Link
+                          href="tel:+01 123 456 7890"
+                          className="hover:underline"
+                        >
                           +01 123 456 7890
                         </Link>
                       </li>
@@ -609,15 +627,24 @@ export default function Home() {
                     <div className="flex items-start">
                       <Image src={location} />
                       <li className="mb-4 ml-2">
-                        <Link href="https://www.google.com/maps/place/ControlF5+Website+Design+%26+Shopify+Ecommerce+Solutions/@22.680614,75.8183355,17z/data=!4m14!1m7!3m6!1s0x3962fc3b6d616681:0x8e398fd9971c46b8!2sControlF5+Website+Design+%26+Shopify+Ecommerce+Solutions!8m2!3d22.680614!4d75.8209104!16s%2Fg%2F1tdf9hwh!3m5!1s0x3962fc3b6d616681:0x8e398fd9971c46b8!8m2!3d22.680614!4d75.8209104!16s%2Fg%2F1tdf9hwh?entry=ttu" className="hover:underline">
+                        <Link
+                          href="https://www.google.com/maps/place/ControlF5+Website+Design+%26+Shopify+Ecommerce+Solutions/@22.680614,75.8183355,17z/data=!4m14!1m7!3m6!1s0x3962fc3b6d616681:0x8e398fd9971c46b8!2sControlF5+Website+Design+%26+Shopify+Ecommerce+Solutions!8m2!3d22.680614!4d75.8209104!16s%2Fg%2F1tdf9hwh!3m5!1s0x3962fc3b6d616681:0x8e398fd9971c46b8!8m2!3d22.680614!4d75.8209104!16s%2Fg%2F1tdf9hwh?entry=ttu"
+                          className="hover:underline"
+                        >
                           21 lorem ipsum,31 lorem ipsum 222 dolor ipsum
                         </Link>
                       </li>
                     </div>
                     <div className="flex gap-2">
-                      <Link href="https://www.facebook.com"><Image src={face} /></Link>
-                      <Link href="https://www.instagram.com"><Image src={insta} /></Link>
-                      <Link href="https://twitter.com"><Image src={twit} /></Link>
+                      <Link href="https://www.facebook.com">
+                        <Image src={face} />
+                      </Link>
+                      <Link href="https://www.instagram.com">
+                        <Image src={insta} />
+                      </Link>
+                      <Link href="https://twitter.com">
+                        <Image src={twit} />
+                      </Link>
                     </div>
                   </ul>
                 </div>
@@ -642,7 +669,9 @@ export default function Home() {
               <div className=" py-6 md:flex md:items-center text-center md:justify-between">
                 <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center ">
                   © 2023{" "}
-                  <Link href="https://tropicalexotics.com/">Tropical Exotics | </Link>
+                  <Link href="https://tropicalexotics.com/">
+                    Tropical Exotics |{" "}
+                  </Link>
                   All Rights Reserved.
                 </span>
                 <div className="flex mt-4 space-x-5 sm:justify-center justify-center md:mt-0">

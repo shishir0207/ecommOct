@@ -1,3 +1,5 @@
+
+
 #main-bg{
     /* background-image: ; */
     /* overflow: hidden; */
@@ -103,5 +105,40 @@
 
 /* toggle */
 
-
-   
+.spinner {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    border: 9.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+  
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+  }
+  
+  .spinner::before {
+    border-color: #474bff #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+  }
+  
+  .spinner::after {
+    margin: 8.9px;
+  }
+  
+  @keyframes spinner-e04l1k {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
